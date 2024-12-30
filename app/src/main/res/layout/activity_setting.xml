@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="18sp"
+    tools:context=".SettingActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:layout_marginTop="32sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Настройки" />
+
+    <View
+        android:layout_marginTop="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="4sp"
+        android:background="@color/black">
+
+    </View>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/textView7"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Язык приложения" />
+
+    <RadioButton
+        android:id="@+id/radio1"
+        android:checked="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Русский" />
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="English" />
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deutsch" />
+
+    </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="@color/black">
+        </View>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/textView8"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Размер шрифта " />
+
+        <RadioButton
+
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Крупный" />
+        <RadioButton
+            android:id="@+id/text_normal"
+            android:checked="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Нормальный" />
+        <RadioButton
+            android:textSize="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Мелкий" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@color/black">
+    </View>
+
+
+
+        <Switch
+            android:layout_marginTop="14sp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="18sp"
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ночной режим"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+
+</LinearLayout>
